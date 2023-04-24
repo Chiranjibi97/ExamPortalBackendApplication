@@ -12,4 +12,5 @@ public interface QuestionService {
 	public Set<Question> getQuestions();
 	public Question getQuestion(Integer questionId);
 	public Set<Question> getQuistionOfQuiz(Quiz quiz);
+	public void deleteQuestion(Integer id);
 }

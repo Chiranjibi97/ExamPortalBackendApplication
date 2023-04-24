@@ -34,6 +34,6 @@ public class Question {
 	
 	private String answar;
 	
-	@ManyToOne(fetch = FetchType.LAZY)
+	@ManyToOne(fetch = FetchType.EAGER)
 	private Quiz quiz;
 }

@@ -36,10 +36,10 @@ public class Quiz {
 	
 	private Double maxMarks;
 	
-	private String noOfQuestions;
+	private int noOfQuestions;
 	
-	private boolean active;
-	@ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.ALL)
+	private boolean active=false;
+	@ManyToOne(fetch = FetchType.EAGER,cascade = CascadeType.MERGE)
 	private Category category;
 	
 	@OneToMany(mappedBy = "quiz",cascade = CascadeType.ALL,fetch = FetchType.LAZY)

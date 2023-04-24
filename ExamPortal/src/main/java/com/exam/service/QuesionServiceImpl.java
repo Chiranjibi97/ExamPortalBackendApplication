@@ -41,4 +41,9 @@ public class QuesionServiceImpl implements QuestionService {
 		return repo.findByQuiz(quiz);
 	}
 
+	@Override
+	public void deleteQuestion(Integer id) {
+		repo.deleteById(id);		
+	}
+
 }
